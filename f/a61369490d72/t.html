@@ -1,0 +1,8 @@
+<!doctype html><meta name="viewport" content="width=device-width,initial-scale=1"><title>Text</title>
+<body style="font:18px -apple-system;padding:24px">
+<script>
+var q=new URLSearchParams(location.search||location.hash.slice(1));var to=q.get("to")||"";var b=q.get("body")||"";
+var u="sms:"+to+(b?"&body="+encodeURIComponent(b):"");
+document.write('<p>Opening Messages...</p><p><a href="'+u+'" style="font-size:22px">Tap to text '+to.replace(/</g,"")+'</a></p>');
+location.href=u;
+</script></body>
